@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Should You Really Do That?</title>
+    <meta name="description" content="An AI that doesn't support you — it tells you the truth.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-blobs">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+    
+    <main class="container">
+        <header class="header">
+            <h1 class="title">Should You Really Do That?</h1>
+            <p class="subtitle">An AI that doesn't support you — it tells you the truth.</p>
+        </header>
+
+        <section class="input-section glass">
+            <div class="input-wrapper">
+                <textarea 
+                    id="decision-input" 
+                    placeholder="Type your questionable life decision..."
+                    rows="3"
+                ></textarea>
+                <div class="examples-container">
+                    <button class="example-chip" type="button">"I want to quit my job with no backup plan"</button>
+                    <button class="example-chip" type="button">"I'll start studying tomorrow"</button>
+                    <button class="example-chip" type="button">"I'm thinking of texting my ex"</button>
+                </div>
+            </div>
+            
+            <div class="button-group">
+                <button class="action-btn btn-savage" id="btn-savage">
+                    <span class="icon">🔥</span> Savage
+                </button>
+                <button class="action-btn btn-logical" id="btn-logical">
+                    <span class="icon">🧠</span> Logical
+                </button>
+                <button class="action-btn btn-existential" id="btn-existential">
+                    <span class="icon">💀</span> Existential Crisis
+                </button>
+            </div>
+        </section>
+
+        <section class="response-section glass hidden" id="response-container">
+            <div class="response-header">
+                <div class="status-dot"></div>
+                <span class="response-type" id="response-type-label">AI Response</span>
+            </div>
+            <div class="response-content" id="response-text">
+                <!-- AI output goes here -->
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
